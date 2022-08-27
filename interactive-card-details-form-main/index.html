@@ -4,46 +4,108 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cardlandingpage</title>
+  <title>intractivecarddetails</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="index.js" defer></script>
 </head>
 <body>
   <main>
-    <div class="main_contaiiner">
-     <div class="cart1"><img src="images/bg-card-front.png" alt="cart"><div class="logo">
-      <img src="images/card-logo.svg" alt="">
-     </div>
-      <div class="content">
-        <h1>0000 0000 0000 0000</h1>
+    <!--left side container -->
+    <div class="main-container">
 
-        <div class="name">
-          <h4>karan bisht</h4>
-          <h4>00/00</h4>
-        </div>
+      <div class="left_image">
+        <img src="images/bg-main-desktop.png" alt="logo" class="desktop-image">
+        <img src="images/bg-main-mobile.png" alt="logo" class="mobile-image">
       </div>
-    </div>
-     <div class="cart2"><img src="images/bg-card-back.png" alt="cart"> </div>
+ <!-- left side container end -->
+      <!-- riside container start -->
+      <div class="rigth-side-container">
+        <img src="images/bg-main-mobile.png" alt="logo" class="mobile-image">
+       <!-- cart one desigine start -->
+        <div class="cart1">
+          <img src="images/bg-card-front.png" alt="" class="front-cart">
 
-     <div class="login">
+          <div class="logo">
+            <img src="images/card-logo.svg" alt="" class="logo">
+          </div>
 
-      <label>Cardholder name </label>
-      <input type="text" placeholder="e.g. Jane Appleseeed" required>
-      <label>Cardholder name </label>
-      <input type="text" placeholder="e.g 1234 5678 9123 0000" required>
-      <label>Cardholder name </label>
-      <div class="date-chek">
-        <input type="text" placeholder="MM" required>
-       <input type="text" placeholder="YY" required>
-         <input type="number" 
-         class="cvv">
+          <p class="card-number">0000 0000 0000 0000</p>
+          <p  class="card-name">Jane Appleseed</p>
+
+          <p class="date">
+            <span class="month">00 /</span>
+            <span class="year">00</span>
+          </p>
+         </div>
+         <!-- cart one desigine end -->
+
+         <!-- cart two desigine sttart -->
+         <div class="cart2">
+          <img src="images/bg-card-back.png" alt="" class="backpart">
+
+          <p class="cvc">000</p>
+         </div>
+         <!-- cart two desigine end  -->
+        
+          <!-- login-container start -->
+         <div class="login-container">
+        
+          <form action="/" class="form">
+
+            <div class="user-details">
+             <label for="cardholdername">CARDHOLDER Name</label>
+            <input type="text" name="cardholder" id="cardholder-name" placeholder="e.g Jane Appleseed">
+             <p class="name-error"></p>
+            </div>
+
+            <div class="user-details">
+              <label for="cardholdername">Card Nuber</label>
+             <input type="text" name="cardholder" id="card-number" placeholder="e.g 1234 5678 9123 0000 " maxlength="19">
+              <p class="number-error"></p>
+             </div>
+
+
+             <div class="card-cvc">
+              <label for="exp-date" id="exp-date">Exp.Date (MM/YY</label>
+              <label for="cvc">CVC</label>
+             </div>
+
+             <div class="flex">
+               <input type="text" name="month" id="month" placeholder="MM" maxlength="2">
+
+               <input type="text" name="year" id="year" placeholder="YY" maxlength="2">
+
+               <input type="text" name="cvc" id="cvc" placeholder="e.g 123" maxlength="3">
+             </div>
+
+             <div class="error">
+              <p class="month-error"></p>
+              <p class="year-error"></p>
+              <p class="cvc-error"></p>
+             </div>
+
+             <button type="button" class="submit-button">Conform
+
+             </button>
+          </form>
+            
+          <!-- container we represent after succsess -->
+          <div class="sumited-container">
+            <div class="text-container">
+              <img src="images/icon-complete.svg" width="100px" alt="">
+              <h1  class="thank">THANK YOU!</h1>
+              <p class="details">We've added your card details</p>
+
+              <button type="button" class="continueBtn">
+                Continue
+              </button>
+            </div>
+          </div>
+         </div>
+
+          <!-- login-container end -->
       </div>
-      <div class="btn">
-    <button class="conform">Conform</button>
-  </div>
-     </div>
     </div>
   </main>
-  <script src="index.js"></script
 </body>
 </html>
