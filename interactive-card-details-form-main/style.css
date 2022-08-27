@@ -1,0 +1,138 @@
+/* White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%) */
+
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/* :root{
+--vg-backround : hsl(0,0%,100%);
+--vg-gardient: hsl(270,3%,87%);
+--vg-Dark_grayish_violet: hsl(279, 6%, 55%);
+--vg-Very_dark_violet: hsl(278, 68%, 11%) ; 
+}
+*/
+.main_contaiiner{
+    height: 100vh;
+    width: 80%;
+     background:linear-gradient(to left ,rgba(255,255,255,1)70%,rgba(39, 45, 113, 0)35%),url(images/bg-main-desktop.png); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: auto;
+    position: relative;
+} 
+
+.cart1,.cart2{
+    width: 20rem;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.cart1{
+    left: 9rem;
+    top: 11rem;
+    
+}
+
+.cart2{
+    left: 13rem;
+    top: 24rem;
+}
+
+img{
+    width: 100%;
+}
+
+.login{
+    right: 9rem;
+    bottom: 14rem;
+    position: absolute;
+    width: 25rem;
+    height: 40vh;
+    /* background: rgb(160, 100, 100); */
+    padding: 1rem 4rem;
+    
+}
+
+input{
+    width: 100%;
+   margin-bottom: 1rem;
+   padding: 0.4rem 1rem;
+   border-radius: 6px;
+   outline: none;
+   border: 1px solid rgb(178, 175, 175);
+   margin-top: 0.6rem;
+   color: rgb(135, 134, 134);
+
+
+}
+.date-chek{
+    display: flex;
+    gap: .6rem;
+}
+
+.date-chek>.cvv{
+ width: 8rem;
+}
+.date-chek>input{
+    width: 4rem;
+}
+
+label{
+    text-transform: uppercase;
+    color:hsl(278, 68%, 11%)
+}
+
+.btn{
+    text-align: center;
+    margin-top: 1rem;
+    height: 6vh;
+    
+}
+
+.conform{
+   height: 100%;
+    width: 100%;
+    background:  hsl(278, 68%, 11%);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.logo{
+    position: absolute;
+    top: 1rem;  
+    left:1rem
+}
+
+.logo>img{
+width: 75px;
+position: absolute;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    text-align: center;
+    height: 12vh;
+    color: #fff;
+}
+.content>h1{
+    margin: 0rem 0rem;
+}
+.name{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+
+}
